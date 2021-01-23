@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import customTheme from "./theme";
+import { Box, Flex, ChakraProvider, extendTheme } from "@chakra-ui/react";
+import Navbar from "./components/sections/Navbar";
+
+const theme = extendTheme(customTheme);
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <ChakraProvider theme={theme}>
+      <div className="App">
+        <Flex
+          py="3"
+          boxShadow="base"
+          justify="center"
+          align="center"
+          // h="90px"
+          // border="1px"
+          // borderColor="black"
+          // borderStyle="solid"
+          as="header"
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <Navbar />
+        </Flex>
+      </div>
+    </ChakraProvider>
   );
 }
 
