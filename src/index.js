@@ -1,5 +1,6 @@
 import "@fontsource/roboto";
 import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/900.css";
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
