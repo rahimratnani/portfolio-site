@@ -13,7 +13,7 @@ const Hero = () => {
       justify={{ base: "center", lg: "space-between" }}
       align="center"
       direction={{ base: "column", lg: "row" }}
-      textAlign={{ base: "center", md: "left" }}
+      textAlign={{ base: "center", lg: "left" }}
     >
       <Box order={{ base: "2", lg: "1" }}>
         <Heading
@@ -52,7 +52,7 @@ const Hero = () => {
         h={{ base: "13rem", md: "25rem", lg: "25rem", xl: "30rem" }}
         w={{ base: "80vw", md: "25rem", lg: "25rem", xl: "29rem" }}
         mt={{ base: "-4rem", sm: "-3rem", md: "0" }}
-        mb={{ base: "2.5rem", sm: "3rem", md: "3rem", xl: "0" }}
+        mb={{ base: "2.5rem", sm: "3rem", md: "3rem", lg: "0" }}
         order={{ base: "1", lg: "2" }}
       />
     </Flex>

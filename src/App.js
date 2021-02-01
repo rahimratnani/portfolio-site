@@ -13,12 +13,14 @@ function App() {
       <div>
         <Flex
           // position="fixed"
+          position="sticky"
+          top="0"
           py="3"
           boxShadow="base"
           justify="center"
           align="center"
           as="header"
-          // w="100%"
+          bg="white"
         >
           <Navbar />
         </Flex>
@@ -26,7 +28,7 @@ function App() {
         <Home />
 
         <Flex
-          // mt={1}
+          mt={{ md: "8", lg: "0" }}
           boxShadow="inner"
           py="2rem"
           justify="center"
