@@ -1,13 +1,9 @@
 import { Image } from "@chakra-ui/react";
 import illustration from "./../../assets/illustration.svg";
 
-const Illustration = () => {
+const Illustration = (props) => {
   return (
-    <Image
-      boxSize="30rem"
-      src={illustration}
-      alt="illustration of a programmer"
-    />
+    <Image {...props} src={illustration} alt="illustration of a programmer" />
   );
 };
 

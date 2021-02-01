@@ -3,7 +3,15 @@ import Hero from "../sections/Hero";
 
 const Home = () => {
   return (
-    <Flex w="100%" h="90vh" justify="center" as="main">
+    <Flex
+      // position="relative"
+      // top="200px"
+      mt="64px"
+      w="100%"
+      h="90vh"
+      justify="center"
+      as="main"
+    >
       <Hero />
     </Flex>
   );
