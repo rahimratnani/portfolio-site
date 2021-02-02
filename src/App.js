@@ -1,9 +1,10 @@
 import customTheme from "./theme";
 import { Flex, ChakraProvider, extendTheme } from "@chakra-ui/react";
 import Navbar from "./components/sections/Navbar";
-
+import { Switch, Route } from "react-router-dom";
 import Home from "./components/pages/Home";
 import Footer from "./components/sections/Footer";
+import About from "./components/pages/About";
 
 const theme = extendTheme(customTheme);
 
@@ -24,7 +25,10 @@ function App() {
           <Navbar />
         </Flex>
 
-        <Home />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+        </Switch>
 
         <Flex
           mt={{ md: "8", lg: "0" }}
