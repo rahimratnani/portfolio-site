@@ -30,7 +30,6 @@ const Hero = () => {
         <Heading
           fontWeight="700"
           letterSpacing="1px"
-          // fontSize="2.5rem"
           fontSize={{ base: "1.7rem", sm: "2rem", xl: "2.5rem" }}
           as="h2"
           lineHeight={{ base: "1.4", sm: "1.5", xl: "1.3" }}
@@ -47,8 +46,6 @@ const Hero = () => {
       </Box>
 
       <Illustration
-        // h={{ base: "13em", md: "30em" }}
-        // w={{ base: "17em" }}
         h={{ base: "13rem", md: "25rem", lg: "25rem", xl: "30rem" }}
         w={{ base: "80vw", md: "25rem", lg: "25rem", xl: "29rem" }}
         mt={{ base: "-4rem", sm: "-3rem", md: "0" }}

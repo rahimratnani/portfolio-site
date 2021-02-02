@@ -1,7 +1,7 @@
 import customTheme from "./theme";
-import { Box, Flex, ChakraProvider, extendTheme } from "@chakra-ui/react";
+import { Flex, ChakraProvider, extendTheme } from "@chakra-ui/react";
 import Navbar from "./components/sections/Navbar";
-import SocialMedia from "./components/ui/SocialMedia";
+
 import Home from "./components/pages/Home";
 import Footer from "./components/sections/Footer";
 
@@ -12,7 +12,6 @@ function App() {
     <ChakraProvider theme={theme}>
       <div>
         <Flex
-          // position="fixed"
           position="sticky"
           top="0"
           py="3"

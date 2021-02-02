@@ -35,19 +35,10 @@ const CustomDrawer = () => {
           <DrawerContent>
             <DrawerCloseButton _hover={{ color: "primary" }} />
             <DrawerHeader p={8}>
-              {/* <Link href="/" onClick={onClose} variant="link">
-                Logo
-              </Link> */}
               <Logo onClick={onClose} />
             </DrawerHeader>
 
-            <DrawerBody
-              //   as={Stack}
-              //   fontSize="lg"
-              //   justify="center"
-              px={8}
-              pb={16}
-            >
+            <DrawerBody px={8} pb={16}>
               <NavbarLinks
                 justify="center"
                 fontSize="lg"
@@ -57,10 +48,6 @@ const CustomDrawer = () => {
                 home={true}
                 h="full"
               />
-              {/* <Link onClick={onClose}>Home</Link>
-              <Link onClick={onClose}>About</Link>
-              <Link onClick={onClose}>Projects</Link>
-              <Link onClick={onClose}>Resume</Link> */}
             </DrawerBody>
 
             <DrawerFooter justifyContent="flex-start" px={4} py={8}>

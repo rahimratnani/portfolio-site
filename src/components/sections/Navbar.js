@@ -8,7 +8,6 @@ import NavbarLinks from "../ui/NavbarLinks";
 const Navbar = () => {
   return (
     <Flex
-      // justify="space-between"
       align="center"
       as="nav"
       direction="row"

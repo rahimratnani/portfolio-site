@@ -7,12 +7,6 @@ const hoverStyle = { color: "primary" };
 const NavbarLinks = (props) => {
   const { home, onClick, ...rest } = props;
   return (
-    // <HStack
-    //   mr="2rem"
-    //   display={{ base: "none", lg: "block" }}
-    //   fontSize="1.1rem"
-    //   spacing="2rem"
-    // >
     <Stack {...rest}>
       {home ? (
         <Link onClick={onClick} _hover={hoverStyle} as={RouterLink} to="/">
@@ -34,7 +28,6 @@ const NavbarLinks = (props) => {
         Resume
       </Link>
     </Stack>
-    // </HStack>
   );
 };
 
