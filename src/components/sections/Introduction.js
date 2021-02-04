@@ -1,4 +1,13 @@
-import { Box, Link, Heading, Text, Tooltip, Button } from "@chakra-ui/react";
+import {
+  Box,
+  Link,
+  Heading,
+  Text,
+  Tooltip,
+  Button,
+  Center,
+} from "@chakra-ui/react";
+import SocialMedia from "../ui/SocialMedia";
 
 const Introduction = (props) => {
   const { onClick } = props;
@@ -33,19 +42,24 @@ const Introduction = (props) => {
         web development was an obvious path.
       </Text>
 
-      <Text mb={4} fontSize="1.1rem">
+      <Text fontSize="1.1rem">
         Let's get in touch. Write me at{" "}
         <Tooltip
           bg="#D3F3CA"
           color="gray.700"
           label="Click to copy email address."
           aria-label="A tooltip"
+          placement="top"
         >
           <Button onClick={onClick} color="primary" variant="link">
             rahimratnani4@gmail.com
           </Button>
         </Tooltip>
       </Text>
+
+      <Center mt="4rem">
+        <SocialMedia direction="row" />
+      </Center>
     </Box>
   );
 };

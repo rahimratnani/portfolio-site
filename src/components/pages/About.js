@@ -1,15 +1,10 @@
 import React, { useState } from "react";
-import {
-  Box,
-  Button,
-  Flex,
-  Heading,
-  Stack,
-  useClipboard,
-  useToast,
-} from "@chakra-ui/react";
+import { Flex, Heading, useClipboard, useToast, Text } from "@chakra-ui/react";
 import Introduction from "../sections/Introduction";
 import Photo from "../ui/Photo";
+import RandomFacts from "../sections/RandomFacts";
+import CustomHr from "../ui/CustomHr";
+import Skills from "../sections/Skills";
 
 const About = () => {
   const [clipboardValue, setcClipboardValue] = useState(
@@ -17,6 +12,18 @@ const About = () => {
   );
   const { hasCopied, onCopy } = useClipboard(clipboardValue);
   const toast = useToast();
+  const skills = {
+    Languages: ["JavaScript", "HTML", "CSS", "Sass"],
+    Technologies: ["React.js", "Node.js", "Chakra UI", "Bulma CSS"],
+    "Other Tools": [
+      "Linux",
+      "Git",
+      "Webpack",
+      "Visual Studio Code",
+      "NPM",
+      "Vim",
+    ],
+  };
 
   const handleCopyAndToast = () => {
     onCopy();
@@ -30,28 +37,31 @@ const About = () => {
   };
 
   return (
-    <Flex direction="row" w="100%" justify="center" as="main">
-      {/* =================== */}
-
+    <Flex mb="2rem" direction="row" w="100%" justify="center" as="main">
       <Flex
         className="container"
-        // borderColor="black"
-        // borderStyle="solid"
-        // border="1px"
         direction="column"
         w={{ base: "90%", lg: "80%", xl: "1040px" }}
-        mt=""
         align="center"
       >
-        <Heading mt="3rem" fontWeight="700" fontSize={{ base: "4xl" }} as="h1">
-          About Me
+        <Heading mt="2rem" fontWeight="900" fontSize={{ base: "4xl" }} as="h1">
+          About{" "}
+          <Text color="primary" as="span">
+            Me
+          </Text>
         </Heading>
         <Photo mt="1.5rem" />
 
         <Introduction onClick={handleCopyAndToast} />
-      </Flex>
 
-      {/* =================== */}
+        <CustomHr w={{ base: "60%" }} my="2rem" />
+
+        <RandomFacts />
+
+        <CustomHr w={{ base: "60%" }} my="2rem" />
+
+        <Skills skills={skills} />
+      </Flex>
     </Flex>
   );
 };

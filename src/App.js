@@ -13,6 +13,7 @@ function App() {
     <ChakraProvider theme={theme}>
       <div>
         <Flex
+          zIndex="docked"
           position="sticky"
           top="0"
           py="3"

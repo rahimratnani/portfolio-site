@@ -1,4 +1,4 @@
-import { Box, Divider, Flex, Spacer, Text, Link } from "@chakra-ui/react";
+import { Flex, Link } from "@chakra-ui/react";
 import { Link as RouterLink } from "react-router-dom";
 import SocialMedia from "../ui/SocialMedia";
 
