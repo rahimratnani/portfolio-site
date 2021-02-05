@@ -1,4 +1,4 @@
-import { Flex } from "@chakra-ui/react";
+import { Box, Text, Flex, Heading } from "@chakra-ui/react";
 
 const Projects = () => {
   return (
@@ -8,7 +8,14 @@ const Projects = () => {
         direction="column"
         w={{ base: "90%", lg: "80%", xl: "1040px" }}
         align="center"
-      ></Flex>
+      >
+        <Heading mt="2rem" fontWeight="900" fontSize={{ base: "4xl" }} as="h1">
+          My{" "}
+          <Text color="primary" as="span">
+            Projects
+          </Text>
+        </Heading>
+      </Flex>
     </Flex>
   );
 };

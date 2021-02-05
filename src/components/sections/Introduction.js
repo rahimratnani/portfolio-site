@@ -45,8 +45,8 @@ const Introduction = (props) => {
       <Text fontSize="1.1rem">
         Let's get in touch. Write me at{" "}
         <Tooltip
-          bg="#D3F3CA"
-          color="gray.700"
+          bg="rgba(0,0,0,0.8)"
+          color="white"
           label="Click to copy email address."
           aria-label="A tooltip"
           placement="top"

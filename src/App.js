@@ -5,6 +5,7 @@ import { Switch, Route } from "react-router-dom";
 import Home from "./components/pages/Home";
 import Footer from "./components/sections/Footer";
 import About from "./components/pages/About";
+import Projects from "./components/pages/Projects";
 
 const theme = extendTheme(customTheme);
 
@@ -29,6 +30,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
+          <Route path="/projects" component={Projects} />
         </Switch>
 
         <Flex
