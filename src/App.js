@@ -1,7 +1,7 @@
 import customTheme from "./theme";
 import { Flex, ChakraProvider, extendTheme } from "@chakra-ui/react";
 import Navbar from "./components/sections/Navbar";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 import Home from "./components/pages/Home";
 import Footer from "./components/sections/Footer";
 import About from "./components/pages/About";
@@ -31,6 +31,14 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/projects" component={Projects} />
+          {/* <Route
+            path="/resume"
+            component={() => {
+              window.location.href =
+                "https://drive.google.com/file/d/1MZjWAt2QqJ7oOM4DELWOzEvo8n8PuGbh/view?usp=sharing";
+              return null;
+            }}
+          /> */}
         </Switch>
 
         <Flex

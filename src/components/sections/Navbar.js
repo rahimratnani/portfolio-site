@@ -17,14 +17,14 @@ const Navbar = () => {
       <Logo />
       <Spacer />
       <NavbarLinks
-        mr="2rem"
+        // mr="2rem"
         display={{ base: "none", lg: "block" }}
         fontSize="1.1rem"
         spacing="2rem"
         direction="row"
         home={false}
       />
-      <DarkModeButton />
+      {/* <DarkModeButton /> */}
       <CustomDrawer />
     </Flex>
   );

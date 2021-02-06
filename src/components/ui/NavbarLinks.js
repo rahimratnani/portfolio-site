@@ -24,7 +24,12 @@ const NavbarLinks = (props) => {
       >
         Projects
       </Link>
-      <Link onClick={onClick} _hover={hoverStyle} as={RouterLink} to="/resume">
+      <Link
+        onClick={onClick}
+        _hover={hoverStyle}
+        isExternal
+        href="https://drive.google.com/file/d/1MZjWAt2QqJ7oOM4DELWOzEvo8n8PuGbh/view?usp=sharing"
+      >
         Resume
       </Link>
     </Stack>
