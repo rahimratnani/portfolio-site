@@ -9,7 +9,6 @@ const Hero = () => {
       as="section"
       h="full"
       w={{ base: "90%", lg: "80%", xl: "1040px" }}
-      // justify="space-between"
       justify={{ base: "center", lg: "space-between" }}
       align="center"
       direction={{ base: "column", lg: "row" }}
@@ -18,7 +17,6 @@ const Hero = () => {
       <Box order={{ base: "2", lg: "1" }}>
         <Heading
           letterSpacing="1px"
-          // fontSize="3xl"
           fontSize={{ base: "2xl" }}
           fontWeight="400"
           as="h2"
@@ -42,14 +40,16 @@ const Hero = () => {
           An Aspiring Web Developer.
         </Heading>
 
-        <HeroButton mt={{ base: "8", sm: "8", lg: "4", xl: "5" }} />
+        <HeroButton
+          mb={{ base: "0.5rem", md: "1.5rem", lg: "0" }}
+          mt={{ base: "4rem", lg: "4", xl: "5" }}
+        />
       </Box>
 
       <Illustration
         h={{ base: "13rem", md: "25rem", lg: "25rem", xl: "30rem" }}
         w={{ base: "80vw", md: "25rem", lg: "25rem", xl: "29rem" }}
-        mt={{ base: "-4rem", sm: "-3rem", md: "0" }}
-        mb={{ base: "2.5rem", sm: "3rem", md: "3rem", lg: "0" }}
+        mb={{ base: "4rem", md: "3rem", lg: "0" }}
         order={{ base: "1", lg: "2" }}
       />
     </Flex>

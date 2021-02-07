@@ -1,12 +1,13 @@
-import { Link, Button, Icon } from "@chakra-ui/react";
-import { FaEnvelope } from "react-icons/fa";
+import { Button } from "@chakra-ui/react";
+import { Link as RouterLink } from "react-router-dom";
+import { FaUser } from "react-icons/fa";
 
 const HeroButton = (props) => {
   return (
     <Button
       {...props}
-      href="mailto:rahimratnani4@gmail.com"
-      as={Link}
+      to="/about"
+      as={RouterLink}
       _hover={{ backgroundColor: "#5BAB80", textDecoration: "none" }}
       _active={{ backgroundColor: "#5BAB80" }}
       _focus={{ boxShadow: "none" }}
@@ -17,9 +18,9 @@ const HeroButton = (props) => {
       fontWeight="500"
       borderRadius="full"
       letterSpacing="0.5px"
-      rightIcon={<Icon m="0 0 2px 8px" as={FaEnvelope} w={5} h={5} />}
+      rightIcon={<FaUser size="0.9rem" />}
     >
-      Let's Talk
+      Know More
     </Button>
   );
 };

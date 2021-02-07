@@ -41,7 +41,7 @@ const CustomDrawer = () => {
             <DrawerBody px={8} pb={16}>
               <NavbarLinks
                 justify="center"
-                fontSize="lg"
+                fontSize="1.25rem"
                 spacing={4}
                 onClick={onClose}
                 direction="column"
