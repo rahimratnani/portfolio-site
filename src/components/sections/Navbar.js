@@ -1,6 +1,5 @@
-import { Box, Flex, Spacer } from "@chakra-ui/react";
+import { Flex, Spacer } from "@chakra-ui/react";
 import CustomDrawer from "../ui/CustomDrawer";
-import DarkModeButton from "../ui/DarkModeButton";
 
 import Logo from "../ui/Logo";
 import NavbarLinks from "../ui/NavbarLinks";
@@ -24,7 +23,7 @@ const Navbar = () => {
         direction="row"
         home={false}
       />
-      {/* <DarkModeButton /> */}
+
       <CustomDrawer />
     </Flex>
   );

@@ -8,9 +8,6 @@ import {
   DrawerContent,
   DrawerCloseButton,
   useDisclosure,
-  Text,
-  Link,
-  Stack,
 } from "@chakra-ui/react";
 import MenuButton from "./MenuButton";
 import Logo from "./Logo";

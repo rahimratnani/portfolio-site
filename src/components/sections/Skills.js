@@ -40,52 +40,6 @@ const Skills = (props) => {
         spacingY={10}
       >
         {modifiedSkills}
-        {/* <Box textAlign="center">
-          <Heading fontSize="lg" as="h3">
-            Languages
-          </Heading>
-
-          <CustomHr mx="auto" w="2rem" mt={1} />
-
-          <List mt={3} fontSize="1.1rem" textAlign="center" spacing={1}>
-            <ListItem>JavaScript</ListItem>
-            <ListItem>HTML</ListItem>
-            <ListItem>CSS</ListItem>
-            <ListItem>Sass</ListItem>
-          </List>
-        </Box>
-
-        <Box textAlign="center">
-          <Heading fontSize="lg" as="h3">
-            Technologies
-          </Heading>
-
-          <CustomHr mx="auto" w="2rem" mt={1} />
-
-          <List mt={3} fontSize="1.1rem" textAlign="center" spacing={1}>
-            <ListItem>React.js</ListItem>
-            <ListItem>Node.js</ListItem>
-            <ListItem>Chakra UI</ListItem>
-            <ListItem>Bulma CSS</ListItem>
-          </List>
-        </Box>
-
-        <Box textAlign="center">
-          <Heading fontSize="lg" as="h3">
-            Other Tools
-          </Heading>
-
-          <CustomHr mx="auto" w="2rem" mt={1} />
-
-          <List mt={3} fontSize="1.1rem" textAlign="center" spacing={1}>
-            <ListItem>Linux</ListItem>
-            <ListItem>Git</ListItem>
-            <ListItem>Webpack</ListItem>
-            <ListItem>Visual Studio Code</ListItem>
-            <ListItem>NPM</ListItem>
-            <ListItem>Vim</ListItem>
-          </List>
-        </Box> */}
       </SimpleGrid>
     </Box>
   );

@@ -13,10 +13,10 @@ const About = () => {
   const { hasCopied, onCopy } = useClipboard(clipboardValue);
   const toast = useToast();
   const skills = {
-    Languages: ["JavaScript", "HTML", "CSS", "Sass"],
-    Technologies: ["React.js", "Node.js", "Chakra UI", "Bulma CSS"],
+    Technologies: ["React.js", "Node.js", "Chakra UI", "Bulma CSS", "Sass"],
+    Languages: ["JavaScript", "HTML", "CSS"],
     "Other Tools": [
-      "Linux",
+      "Linux CLI",
       "Git",
       "Webpack",
       "Visual Studio Code",
