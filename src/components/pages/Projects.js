@@ -19,11 +19,9 @@ const Projects = () => {
           </Text>
         </Heading>
 
-        {/* ====== */}
-
-        <ProjectCard data={data} />
-
-        {/* ====== */}
+        {data.map((project, i) => {
+          return <ProjectCard key={`${project.title + i}`} project={project} />;
+        })}
 
         <Button
           href="https://github.com/rahimratnani"
