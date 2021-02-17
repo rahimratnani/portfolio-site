@@ -1,11 +1,11 @@
-import memoryGameImg from "./memory-game.png";
-import ticTacToeImg from "./tic-tac-toe.png";
-import weatherAppImg from "./weather-app.png";
-import calculatorImg from "./calculator.png";
+import memoryGame from "./memory-game.png";
+import ticTacToe from "./tic-tac-toe.png";
+import weatherApp from "./weather-app.png";
+import calculator from "./calculator.png";
 
 const data = [
   {
-    img: weatherAppImg,
+    img: weatherApp,
     title: "Weather App",
     builtWith: "React, OpenWeatherMap API, Country Flags API, Geolocation API",
     code: "https://github.com/rahimratnani/weather-app",
@@ -14,7 +14,7 @@ const data = [
       "A weather app that shows current weather for a city. It uses OpenWeatherMap API to fetch current weather. It can show weather in two units (celsius and fahrenheit). It can also fetch weather based on your location if location service is enabled in your browser.",
   },
   {
-    img: ticTacToeImg,
+    img: ticTacToe,
     title: "Tic-Tac-Toe",
     builtWith: "HTML, CSS, JavaScript, Minimax algorithm",
     code: "https://github.com/rahimratnani/tic-tac-toe",
@@ -23,7 +23,7 @@ const data = [
       "Implementation of classic Tic-Tac-Toe game with JavaScript, HTML, and CSS. It has two game modes: Normal mode and AI mode. AI Mode uses the Minimax algorithm to make decisions against the human player.",
   },
   {
-    img: memoryGameImg,
+    img: memoryGame,
     title: "Memory Game",
     builtWith: "React, Bulma CSS, Sass",
     code: "https://github.com/rahimratnani/memory-game",
@@ -32,7 +32,7 @@ const data = [
       "Built with React and Bulma CSS, this game puts your memory to the test. You'll be presented with multiple images. The images will shuffle every-time they are clicked. DO NOT click any images twice, else the score will reset to zero. The goal is to get the highest score possible.",
   },
   {
-    img: calculatorImg,
+    img: calculator,
     title: "Calculator",
     builtWith: "HTML, CSS, JavaScript",
     code: "https://github.com/rahimratnani/calculator",
