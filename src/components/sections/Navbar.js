@@ -1,30 +1,40 @@
 import { Flex, Spacer } from "@chakra-ui/react";
 import CustomDrawer from "../ui/CustomDrawer";
-
 import Logo from "../ui/Logo";
 import NavbarLinks from "../ui/NavbarLinks";
 
 const Navbar = () => {
   return (
     <Flex
+      zIndex="docked"
+      position="sticky"
+      top="0"
+      py="3"
+      boxShadow="base"
+      justify="center"
       align="center"
-      as="nav"
-      direction="row"
-      h="full"
-      w={{ base: "90%", lg: "80%", xl: "1040px" }}
+      as="header"
+      bg="white"
     >
-      <Logo />
-      <Spacer />
-      <NavbarLinks
-        // mr="2rem"
-        display={{ base: "none", lg: "block" }}
-        fontSize="1.1rem"
-        spacing="2rem"
+      <Flex
+        align="center"
+        as="nav"
         direction="row"
-        home={false}
-      />
+        h="full"
+        w={{ base: "90%", lg: "80%", xl: "1040px" }}
+      >
+        <Logo />
+        <Spacer />
+        <NavbarLinks
+          display={{ base: "none", lg: "block" }}
+          fontSize="1.1rem"
+          spacing="2rem"
+          direction="row"
+          home={false}
+        />
 
-      <CustomDrawer />
+        <CustomDrawer />
+      </Flex>
     </Flex>
   );
 };

@@ -5,6 +5,7 @@ import Photo from "../ui/Photo";
 import RandomFacts from "../sections/RandomFacts";
 import CustomHr from "../ui/CustomHr";
 import Skills from "../sections/Skills";
+import Footer from "../sections/Footer";
 
 const About = () => {
   const [clipboardValue, setcClipboardValue] = useState(
@@ -37,32 +38,41 @@ const About = () => {
   };
 
   return (
-    <Flex mb="2rem" direction="row" w="100%" justify="center" as="main">
-      <Flex
-        className="container"
-        direction="column"
-        w={{ base: "90%", lg: "80%", xl: "1040px" }}
-        align="center"
-      >
-        <Heading mt="2rem" fontWeight="900" fontSize={{ base: "4xl" }} as="h1">
-          About{" "}
-          <Text color="primary" as="span">
-            Me
-          </Text>
-        </Heading>
-        <Photo mt="1.5rem" />
+    <>
+      <Flex mb="2rem" direction="row" w="100%" justify="center" as="main">
+        <Flex
+          className="container"
+          direction="column"
+          w={{ base: "90%", lg: "80%", xl: "1040px" }}
+          align="center"
+        >
+          <Heading
+            mt="2rem"
+            fontWeight="900"
+            fontSize={{ base: "4xl" }}
+            as="h1"
+          >
+            About{" "}
+            <Text color="primary" as="span">
+              Me
+            </Text>
+          </Heading>
+          <Photo mt="1.5rem" />
 
-        <Introduction onClick={handleCopyAndToast} />
+          <Introduction onClick={handleCopyAndToast} />
 
-        <CustomHr w={{ base: "60%" }} my="2rem" />
+          <CustomHr w={{ base: "60%" }} my="2rem" />
 
-        <RandomFacts />
+          <RandomFacts />
 
-        <CustomHr w={{ base: "60%" }} my="2rem" />
+          <CustomHr w={{ base: "60%" }} my="2rem" />
 
-        <Skills skills={skills} />
+          <Skills skills={skills} />
+        </Flex>
       </Flex>
-    </Flex>
+
+      <Footer />
+    </>
   );
 };
 
