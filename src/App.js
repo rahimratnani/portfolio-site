@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import customTheme from "./theme";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import Navbar from "./components/sections/Navbar";
@@ -9,7 +10,26 @@ import ScrollToTop from "./components/util/ScrollToTop";
 
 const theme = extendTheme(customTheme);
 
+const fakeRequest = () =>
+  new Promise((resolve) => setTimeout(() => resolve(), 2500));
+
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fakeRequest().then(() => {
+      const loader = document.querySelector(".loader-container");
+      if (loader) {
+        loader.remove();
+        setLoading(!loading);
+      }
+    });
+  }, []);
+
+  if (loading) {
+    return null;
+  }
+
   return (
     <ChakraProvider theme={theme}>
       <ScrollToTop>

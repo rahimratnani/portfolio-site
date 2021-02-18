@@ -24,11 +24,56 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <style>
+      .loader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .circle {
+        width: 1rem;
+        height: 1rem;
+        background-color: #21c998;
+        border-radius: 50%;
+        margin: 0.1rem;
+        animation: scale 0.5s linear 0s infinite alternate;
+      }
+
+      .one {
+        animation-delay: 0s;
+      }
+
+      .two {
+        animation-delay: 0.2s;
+      }
+
+      .three {
+        animation-delay: 0.4s;
+      }
+
+      @keyframes scale {
+        from {
+          transform: scale(0.2);
+        }
+        to {
+          transform: scale(1);
+        }
+      }
+    </style>
     <title>React App</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <div class="loader-container">
+      <div class="loader">
+        <div class="circle one"></div>
+        <div class="circle two"></div>
+        <div class="circle three"></div>
+      </div>
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
