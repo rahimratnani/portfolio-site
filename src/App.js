@@ -17,9 +17,17 @@ function App() {
           <Navbar />
 
           <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/projects" component={Projects} />
+            <Route path="/about">
+              <About />
+            </Route>
+
+            <Route path="/projects">
+              <Projects />
+            </Route>
+
+            <Route path="/">
+              <Home />
+            </Route>
           </Switch>
         </div>
       </ScrollToTop>
