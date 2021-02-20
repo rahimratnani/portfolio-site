@@ -86,7 +86,6 @@ const ProjectCard = (props) => {
       </Box>
     </Flex>
   );
-  //   });
 };
 
 export default ProjectCard;

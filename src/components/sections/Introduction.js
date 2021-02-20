@@ -73,15 +73,7 @@ export default Introduction;
 
 // New Code //
 
-import {
-  Box,
-  Link,
-  Heading,
-  Text,
-  Tooltip,
-  Button,
-  Center,
-} from "@chakra-ui/react";
+import { Box, Link, Heading, Text, Tooltip, Button } from "@chakra-ui/react";
 import SocialMedia from "../ui/SocialMedia";
 
 const Introduction = (props) => {

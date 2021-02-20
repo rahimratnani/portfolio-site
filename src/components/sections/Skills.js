@@ -51,24 +51,8 @@ const Skills = (props) => {
 export default Skills;
 */
 
-import {
-  Box,
-  List,
-  ListItem,
-  Heading,
-  SimpleGrid,
-  Image,
-  Flex,
-  Wrap,
-  HStack,
-  Square,
-  Tooltip,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Heading } from "@chakra-ui/react";
 import CustomHr from "./../ui/CustomHr";
-import js from "./../../assets/skills/javascript.svg";
-import html from "./../../assets/skills/html5.svg";
-import css from "./../../assets/skills/css3.svg";
 import SkillCategory from "./SkillCategory";
 
 const Skills = (props) => {
@@ -77,7 +61,6 @@ const Skills = (props) => {
   const skillsArray = [];
 
   for (let category in skills) {
-    // console.log(skills[category]);
     skillsArray.push(
       <SkillCategory
         key={category}
