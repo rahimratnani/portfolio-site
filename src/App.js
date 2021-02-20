@@ -10,8 +10,10 @@ import ScrollToTop from "./components/util/ScrollToTop";
 
 const theme = extendTheme(customTheme);
 
+// const fakeRequest = () =>
+//   new Promise((resolve) => setTimeout(() => resolve(), 2500));
 const fakeRequest = () =>
-  new Promise((resolve) => setTimeout(() => resolve(), 2500));
+  new Promise((resolve) => setTimeout(() => resolve(), 500));
 
 function App() {
   const [loading, setLoading] = useState(true);
