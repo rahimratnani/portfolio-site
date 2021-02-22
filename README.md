@@ -26,7 +26,7 @@ $ npm install
 $ npm start
 ```
 
-#### :computer: See it [live](https://rahim-portfolio-site.netlify.app/)
+#### See it [live](https://rahim-portfolio-site.netlify.app/) :computer:
 
 ----
 Made with :heart: and [Chakra UI](https://chakra-ui.com/)
