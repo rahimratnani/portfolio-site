@@ -1,5 +1,6 @@
 import memoryGame from "./memory-game.png";
 import ticTacToe from "./tic-tac-toe.png";
+import portfolio from "./portfolio.png";
 import weatherApp from "./weather-app.png";
 import calculator from "./calculator.png";
 
@@ -22,6 +23,16 @@ const data = [
     description:
       "Implementation of classic Tic-Tac-Toe game with JavaScript, HTML, and CSS. It has two game modes: Normal mode and AI mode. AI Mode uses the Minimax algorithm to make decisions against the human player.",
   },
+
+  {
+    img: portfolio,
+    title: "Portfolio Site",
+    builtWith: "React, Chakra UI, React Router",
+    code: "https://github.com/rahimratnani/portfolio-site",
+    live: "https://rahim-portfolio-site.netlify.app/",
+    description: "Yay! You're already here. Why not take a look around!",
+  },
+
   {
     img: memoryGame,
     title: "Memory Game",
