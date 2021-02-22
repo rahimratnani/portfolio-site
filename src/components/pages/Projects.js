@@ -1,10 +1,15 @@
 import { Link, Text, Flex, Heading, Button } from "@chakra-ui/react";
+import React, { useEffect } from "react";
 import { FaGithub } from "react-icons/fa";
 import Footer from "../sections/Footer";
 import ProjectCard from "../sections/ProjectCard";
 import data from "./../../assets/projects/data";
 
 const Projects = () => {
+  useEffect(() => {
+    document.title = "Projects Made By Rahim Ratnani";
+  });
+
   return (
     <>
       <Flex direction="row" w="100%" justify="center" as="main">

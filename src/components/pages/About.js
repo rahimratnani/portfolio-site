@@ -85,7 +85,7 @@ export default About;
 
 // New Code //
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Flex, Heading, useClipboard, useToast, Text } from "@chakra-ui/react";
 import Introduction from "../sections/Introduction";
 import Photo from "../ui/Photo";
@@ -111,6 +111,10 @@ const About = () => {
       position: "bottom-left",
     });
   };
+
+  useEffect(() => {
+    document.title = "About Rahim Ratnani";
+  }, []);
 
   return (
     <>
