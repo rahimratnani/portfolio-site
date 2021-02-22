@@ -26,7 +26,7 @@ $ npm install
 $ npm start
 ```
 
-**:tv: See it [live](https://rahim-portfolio-site.netlify.app/)**
+#### :tv: See it [live](https://rahim-portfolio-site.netlify.app/)
 
 ----
 Made with :heart: and [Chakra UI](https://chakra-ui.com/)
