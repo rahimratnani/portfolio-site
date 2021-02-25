@@ -29,7 +29,7 @@ const data = [
     title: "Portfolio Site",
     builtWith: "React, Chakra UI, React Router",
     code: "https://github.com/rahimratnani/portfolio-site",
-    live: "https://rahim-portfolio-site.netlify.app/",
+    live: "https://rahimratnani.me/",
     description: "Yay! You're already here. Why not take a look around!",
   },
 
