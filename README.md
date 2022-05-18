@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://rahim-portfolio-site.netlify.app/">
+  <a href="https://rahimratnani.com">
     <h1 align="center">My Portfolio Site</h1>
   </a>
 </p> 
