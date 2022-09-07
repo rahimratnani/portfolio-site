@@ -57,9 +57,9 @@ export default RandomFacts;
 
 // New Code //
 
-import { Box, Heading, List, ListItem, ListIcon, Link } from "@chakra-ui/react";
-import CustomHr from "./../ui/CustomHr";
-import { FaCaretRight } from "react-icons/fa";
+import { Box, Heading, List, ListItem, ListIcon, Link } from '@chakra-ui/react';
+import CustomHr from './../ui/CustomHr';
+import { FaCaretRight } from 'react-icons/fa';
 
 const RandomFacts = (props) => {
   return (
@@ -77,14 +77,7 @@ const RandomFacts = (props) => {
         </ListItem>
 
         <ListItem>
-          <ListIcon color="primary" mb="2px" as={FaCaretRight} />I prefer{" "}
-          <Link
-            color="primary"
-            isExternal
-            href="https://www.reddit.com/user/rahim_ratnani"
-          >
-            Reddit
-          </Link>{" "}
+          <ListIcon color="primary" mb="2px" as={FaCaretRight} />I prefer Reddit
           over other social media
         </ListItem>
 
